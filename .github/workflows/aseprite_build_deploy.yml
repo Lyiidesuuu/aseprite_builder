@@ -1,8 +1,7 @@
 name: Build and deploy Aseprite
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -134,4 +133,3 @@ jobs:
           asset_name: Aseprite-${{ needs.check-version.outputs.latest_tag }}-${{ runner.os }}.zip
           asset_content_type: application/zip
           
-workflow_dispatch
