@@ -1,7 +1,7 @@
 name: Build and deploy Aseprite
 
 on:
-  workflow_disaptch:
+  workflow_dispatch:
   push:
     branches:
       - master
